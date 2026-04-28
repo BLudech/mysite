@@ -607,3 +607,128 @@ body {
     animation: heroZoomOut 15s ease-in-out infinite;
     transform-origin: center;
 }
+/* ===== АДАПТИВНОСТЬ ДЛЯ ПЛАНШЕТОВ (до 1024px) ===== */
+@media (max-width: 1024px) {
+    /* Навигация — уменьшаем отступы */
+    .floating-nav .nav-content {
+        padding: 0 20px;
+    }
+    .nav-menu {
+        gap: 20px;
+    }
+    /* Hero заголовки */
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    /* Сетка каталога на коллекциях */
+    .catalog-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    /* 3D дверь на главной — уменьшаем размер */
+    .door-viewport {
+        width: 320px;
+        height: 420px;
+    }
+}
+
+/* ===== МОБИЛЬНЫЕ ТЕЛЕФОНЫ (до 768px) ===== */
+@media (max-width: 768px) {
+    /* Скрываем навигационное меню и контакты в шапке */
+    .nav-menu, .contact-info {
+        display: none;
+    }
+    /* Показываем бургер-меню (если добавите) или просто логотип по центру */
+    .floating-nav .nav-content {
+        justify-content: center;
+    }
+    
+    /* Hero секция */
+    .hero {
+        padding: 100px 20px 60px;
+    }
+    .hero-title {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    /* Главная: две колонки превращаем в одну */
+    .grid-cols-2 {
+        grid-template-columns: 1fr !important;
+    }
+    
+    /* Каталог: одна колонка вместо двух */
+    .catalog-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Карточки товаров */
+    .card {
+        max-width: 100%;
+    }
+    .card-image img {
+        height: auto;
+        width: 100%;
+    }
+    
+    /* Текст и кнопки */
+    h1, .text-5xl {
+        font-size: 2rem !important;
+    }
+    button, .card-link {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+    
+    /* Футер: колонки в столбец */
+    footer .grid {
+        grid-template-columns: 1fr !important;
+        gap: 40px;
+        text-align: center;
+    }
+    footer .flex {
+        justify-content: center;
+    }
+    
+    /* 3D дверь на главной — ещё меньше */
+    .door-viewport {
+        width: 260px;
+        height: 350px;
+        margin-top: 40px;
+    }
+    .door-slider .slider-img {
+        object-fit: cover;
+    }
+    
+    /* Яндекс-карта на странице салона */
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+    
+    /* Контактные блоки */
+    .flex.items-start.gap-4 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* ===== ОЧЕНЬ МАЛЕНЬКИЕ ТЕЛЕФОНЫ (до 480px) ===== */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    .door-viewport {
+        width: 220px;
+        height: 300px;
+    }
+    .slider-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 1.2rem;
+    }
+}
