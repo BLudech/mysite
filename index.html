@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
+    <script>
+        // Автоматическое определение базового пути для GitHub Pages
+        (function() {
+            const pathParts = window.location.pathname.split('/');
+            if (pathParts.length > 1 && pathParts[1] === 'mysite') {
+                const base = document.createElement('base');
+                base.href = '/mysite/';
+                document.head.insertBefore(base, document.head.firstChild);
+            }
+        })();
+    </script>
 </head>
 <body class="text-slate-800">
 
@@ -66,10 +78,10 @@
                 <div class="door-viewport" id="doorContainer">
                     <div class="door-interior">
                         <div class="door-slider" id="doorSlider">
-                            <img src="./photo/DOOR1.jpg" alt="Interior 1" class="slider-img active">
-                            <img src="./photo/DOOR5.jpg" alt="Interior 2" class="slider-img">
-                            <img src="./photo/DOOR6.jpg" alt="Interior 3" class="slider-img">
-                            <img src="./photo/DOOR7.jpg" alt="Interior 4" class="slider-img">
+                            <img src="photo/DOOR1.jpg" alt="Interior 1" class="slider-img active">
+                            <img src="photo/DOOR5.jpg" alt="Interior 2" class="slider-img">
+                            <img src="photo/DOOR6.jpg" alt="Interior 3" class="slider-img">
+                            <img src="photo/DOOR7.jpg" alt="Interior 4" class="slider-img">
                         </div>
                         <button class="slider-btn prev" id="prevBtn">‹</button>
                         <button class="slider-btn next" id="nextBtn">›</button>
@@ -93,45 +105,42 @@
             </div>
         </div>
     </header>
-     <footer class="bg-emerald-950 text-white py-24">
-            <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-16">
-                <div class="col-span-1 md:col-span-2">
-                    <span class="font-logo text-4xl font-bold tracking-tighter uppercase">Артикс</span>
-                    <p class="mt-8 text-emerald-200/50 max-w-sm leading-relaxed text-lg">
-                        Мы проектируем не двери, а атмосферу тишины, комфорта и безопасности в вашем доме. 
-                    </p>
-                    <div class="flex gap-8 mt-12">
-                        <a href="#" class="text-2xl hover:text-emerald-400 transition-colors"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-2xl hover:text-emerald-400 transition-colors"><i class="fab fa-vk"></i></a>
-                        <a href="#" class="text-2xl hover:text-emerald-400 transition-colors"><i class="fab fa-telegram-plane"></i></a>
-                    </div>
-                </div>
-
-                <div>
-                    <h4 class="font-logo font-bold uppercase tracking-widest text-emerald-500 mb-8">Сервис</h4>
-                    <ul class="space-y-4 text-emerald-100/70 text-sm">
-                        <li><a class="hover:text-white transition">Замер с образцами</a></li>
-                        <li><a class="hover:text-white transition">Дизайн-проект</a></li>
-                        <li><a class="hover:text-white transition">Скрытый монтаж</a></li>
-                        <li><a class="hover:text-white transition">Гарантия 5 лет</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="font-logo font-bold uppercase tracking-widest text-emerald-500 mb-8">Контакты</h4>
-                    <p class="text-emerald-100/70 mb-4">г. Йошкар-Ола, Центр дизайна АРТИКС</p>
-                    <a href="tel:88005008552" class="text-2xl font-bold text-white block">8 800 500 85 52</a>
-                    <p class="mt-12 text-[10px] uppercase tracking-[0.3em] text-emerald-700">© 2026 Artix Atelier Branding</p>
+    
+    <footer class="bg-emerald-950 text-white py-24">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-16">
+            <div class="col-span-1 md:col-span-2">
+                <span class="font-logo text-4xl font-bold tracking-tighter uppercase">Артикс</span>
+                <p class="mt-8 text-emerald-200/50 max-w-sm leading-relaxed text-lg">
+                    Мы проектируем не двери, а атмосферу тишины, комфорта и безопасности в вашем доме. 
+                </p>
+                <div class="flex gap-8 mt-12">
+                    <a href="#" class="text-2xl hover:text-emerald-400 transition-colors"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-2xl hover:text-emerald-400 transition-colors"><i class="fab fa-vk"></i></a>
+                    <a href="#" class="text-2xl hover:text-emerald-400 transition-colors"><i class="fab fa-telegram-plane"></i></a>
                 </div>
             </div>
-        </footer>
-      <footer class="footer">
-  <div class="footer-content">
-    <!-- сюда можно добавить свой HTML-контент, если хочешь поменять текст -->
-  </div>
-</footer>
+
+            <div>
+                <h4 class="font-logo font-bold uppercase tracking-widest text-emerald-500 mb-8">Сервис</h4>
+                <ul class="space-y-4 text-emerald-100/70 text-sm">
+                    <li><a href="#" class="hover:text-white transition">Замер с образцами</a></li>
+                    <li><a href="#" class="hover:text-white transition">Дизайн-проект</a></li>
+                    <li><a href="#" class="hover:text-white transition">Скрытый монтаж</a></li>
+                    <li><a href="#" class="hover:text-white transition">Гарантия 5 лет</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-logo font-bold uppercase tracking-widest text-emerald-500 mb-8">Контакты</h4>
+                <p class="text-emerald-100/70 mb-4">г. Йошкар-Ола, Центр дизайна АРТИКС</p>
+                <a href="tel:88005008552" class="text-2xl font-bold text-white block">8 800 500 85 52</a>
+                <p class="mt-12 text-[10px] uppercase tracking-[0.3em] text-emerald-700">© 2026 Artix Atelier Branding</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
+    
     <!-- ==================== ИСПРАВЛЕННЫЕ СКРИПТЫ ==================== -->
     <script>
         // === 3D ДВЕРЬ + СЛАЙДЕР ===
@@ -224,4 +233,4 @@
         });
     </script>
 </body>
-</html> 
+</html>
