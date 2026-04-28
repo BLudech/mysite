@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АРТИКС — Наш салон</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+
+    <!-- ВЫПЛЫВАЮЩАЯ ВЕРХНЯЯ ПАНЕЛЬ -->
+    <nav class="floating-nav">
+        <div class="nav-content">
+            <div class="logo-container">
+                <div class="logo-frame">
+                    <span class="font-logo text-3xl font-bold tracking-tighter text-artix-green">Артикс</span>
+                </div>
+                <span class="subtitle">ателье дверей</span>
+            </div>
+
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="collection.html" class="nav-link">Каталог</a>
+                <a href="salon.html" class="nav-link active">Салон</a> 
+            </div>
+
+            <div class="contact-info">
+                <a href="tel:88005008552" class="phone">8 800 500 85 52</a>
+                <span class="work-time">9:00 — 19:30</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO САЛОНА с анимацией -->
+    <header class="hero salon-hero">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h1 class="hero-title">Наш салон в Йошкар-Оле</h1>
+            <p class="hero-subtitle">
+                Приглашаем вас в шоу-рум АРТИКС<br>
+                Здесь вы можете увидеть все коллекции вживую и получить профессиональную консультацию.
+            </p>
+        </div>
+    </header>
+
+    <!-- ИНФОРМАЦИЯ О САЛОНЕ -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            
+            <div>
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Ателье дверей Артикс</h2>
+                <div class="space-y-6 text-lg">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-map-marker-alt text-2xl text-artix-green mt-1"></i>
+                        <div>
+                            <p class="font-semibold">Адрес:</p>
+                            <p>Республика Марий Эл, Йошкар-Ола, улица Мира, 113</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-phone text-2xl text-artix-green mt-1"></i>
+                        <div>
+                            <p class="font-semibold">Телефон:</p>
+                            <a href="tel:88005008552" class="text-2xl font-bold text-artix-green">8 800 500 85 52</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-clock text-2xl text-artix-green mt-1"></i>
+                        <div>
+                            <p class="font-semibold">Режим работы:</p>
+                            <p>Ежедневно с 9:00 — 19:30</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="position:relative;overflow:hidden;">
+                <a href="https://yandex.com/maps/org/evrokomfort/1095156317/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Еврокомфорт</a>
+                <a href="https://yandex.com/maps/41/yoshkar-ola/category/hardware_store/184107753/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Строительный магазин в Йошкар‑Оле</a>
+                <a href="https://yandex.com/maps/41/yoshkar-ola/category/windows/184107727/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Окна в Йошкар‑Оле</a>
+                <iframe src="https://yandex.com/map-widget/v1/?ll=47.936288%2C56.636740&mode=search&oid=1095156317&ol=biz&sctx=ZAAAAAgBEAAaKAoSCYUjSKXY90dAEZiJIqRuUUxAEhIJIqXZPA6DiT8RoDcVqTC2cD8iBgABAgMEBSgKOABAKUgBagJydZ0BzczMPaABAKgBAL0BuiRlqIICI9CV0LLRgNC%2B0LrQvtC80YTQvtGA0YIg0JDQoNCi0JjQmtChigIAkgIAmgIMZGVza3RvcC1tYXBz&sll=47.936288%2C56.636740&sspn=0.000939%2C0.000307&text=%D0%95%D0%B2%D1%80%D0%BE%D0%BA%D0%BE%D0%BC%D1%84%D0%BE%D1%80%D1%82%20%D0%90%D0%A0%D0%A2%D0%98%D0%9A%D0%A1&z=21" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- сюда можно добавить свой HTML-контент, если хочешь поменять текст -->
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
