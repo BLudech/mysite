@@ -9,7 +9,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     
+    <!-- Подключаем style.css с правильным путём -->
     <link rel="stylesheet" href="style.css">
+    
+    <script>
+        // Автоматическое определение базового пути для GitHub Pages
+        (function() {
+            // Если сайт открыт на GitHub Pages (второй уровень в пути mysite)
+            const pathParts = window.location.pathname.split('/');
+            if (pathParts.length > 1 && pathParts[1] === 'mysite') {
+                // Создаём тег base для всех относительных путей
+                const base = document.createElement('base');
+                base.href = '/mysite/';
+                document.head.insertBefore(base, document.head.firstChild);
+            }
+        })();
+    </script>
 </head>
 <body>
 
@@ -60,7 +75,7 @@
             <!-- 1 -->
             <div class="card">
                 <div class="card-image">
-                    <img src="./photo/DOOR1.jpg" alt="Лайн">
+                    <img src="photo/DOOR1.jpg" alt="Лайн">
                 </div>
                 <div class="card-content">
                     <span class="card-label">Минимализм</span>
@@ -73,7 +88,7 @@
             <!-- 2 -->
             <div class="card">
                 <div class="card-image">
-                    <img src="./photo/DOOR2.jpg" alt="Орнато">
+                    <img src="photo/DOOR2.jpg" alt="Орнато">
                 </div>
                 <div class="card-content">
                     <span class="card-label">Классика</span>
@@ -86,7 +101,7 @@
             <!-- 3 -->
             <div class="card">
                 <div class="card-image">
-                    <img src="./photo/DOOR3.jpg" alt="Регент">
+                    <img src="photo/DOOR3.jpg" alt="Регент">
                 </div>
                 <div class="card-content">
                     <span class="card-label">Премиум</span>
@@ -99,7 +114,7 @@
             <!-- 4 -->
             <div class="card">
                 <div class="card-image">
-                    <img src="./photo/DOOR1.jpg" alt="Прима">
+                    <img src="photo/DOOR1.jpg" alt="Прима">
                 </div>
                 <div class="card-content">
                     <span class="card-label">Современный</span>
@@ -112,7 +127,7 @@
             <!-- 5 -->
             <div class="card">
                 <div class="card-image">
-                    <img src="./photo/DOOR2.jpg" alt="Инвиз">
+                    <img src="photo/DOOR2.jpg" alt="Инвиз">
                 </div>
                 <div class="card-content">
                     <span class="card-label">Невидимые</span>
@@ -125,7 +140,7 @@
             <!-- 6 -->
             <div class="card">
                 <div class="card-image">
-                    <img src="./photo/DOOR3.jpg" alt="Гранд">
+                    <img src="photo/DOOR3.jpg" alt="Гранд">
                 </div>
                 <div class="card-content">
                     <span class="card-label">Люкс</span>
@@ -138,7 +153,7 @@
             <!-- 7 -->
             <div class="card">
                 <div class="card-image">
-                    <img src="./photo/DOOR1.jpg" alt="Неоклассик">
+                    <img src="photo/DOOR1.jpg" alt="Неоклассик">
                 </div>
                 <div class="card-content">
                     <span class="card-label">Неоклассика</span>
@@ -151,7 +166,7 @@
             <!-- 8 -->
             <div class="card">
                 <div class="card-image">
-                    <img src="./photo/DOOR2.jpg" alt="Сканди">
+                    <img src="photo/DOOR2.jpg" alt="Сканди">
                 </div>
                 <div class="card-content">
                     <span class="card-label">Скандинавия</span>
@@ -164,7 +179,7 @@
             <!-- 9 -->
             <div class="card">
                 <div class="card-image">
-                    <img src="./photo/DOOR3.jpg" alt="Лофт">
+                    <img src="photo/DOOR3.jpg" alt="Лофт">
                 </div>
                 <div class="card-content">
                     <span class="card-label">Индустриаль</span>
@@ -177,7 +192,7 @@
             <!-- 10 -->
             <div class="card">
                 <div class="card-image">
-                    <img src="./photo/DOOR1.jpg" alt="Эко">
+                    <img src="photo/DOOR1.jpg" alt="Эко">
                 </div>
                 <div class="card-content">
                     <span class="card-label">Эко</span>
@@ -190,7 +205,7 @@
             <!-- 11 -->
             <div class="card">
                 <div class="card-image">
-                    <img src="./photo/DOOR2.jpg" alt="Арт">
+                    <img src="photo/DOOR2.jpg" alt="Арт">
                 </div>
                 <div class="card-content">
                     <span class="card-label">Арт-деко</span>
@@ -203,7 +218,7 @@
             <!-- 12 -->
             <div class="card">
                 <div class="card-image">
-                    <img src="./photo/DOOR3.jpg" alt="Виктория">
+                    <img src="photo/DOOR3.jpg" alt="Виктория">
                 </div>
                 <div class="card-content">
                     <span class="card-label">Классика</span>
@@ -216,7 +231,7 @@
             <!-- 13 -->
             <div class="card">
                 <div class="card-image">
-                    <img src="./photo/DOOR1.jpg" alt="Хай-тек">
+                    <img src="photo/DOOR1.jpg" alt="Хай-тек">
                 </div>
                 <div class="card-content">
                     <span class="card-label">Хай-тек</span>
@@ -229,7 +244,7 @@
             <!-- 14 -->
             <div class="card">
                 <div class="card-image">
-                    <img src="./photo/DOOR2.jpg" alt="Глосс">
+                    <img src="photo/DOOR2.jpg" alt="Глосс">
                 </div>
                 <div class="card-content">
                     <span class="card-label">Глянец</span>
@@ -242,7 +257,7 @@
             <!-- 15 -->
             <div class="card">
                 <div class="card-image">
-                    <img src="./photo/DOOR3.jpg" alt="Мат">
+                    <img src="photo/DOOR3.jpg" alt="Мат">
                 </div>
                 <div class="card-content">
                     <span class="card-label">Матовый</span>
@@ -255,7 +270,7 @@
             <!-- 16 -->
             <div class="card">
                 <div class="card-image">
-                    <img src="./photo/DOOR1.jpg" alt="Элит">
+                    <img src="photo/DOOR1.jpg" alt="Элит">
                 </div>
                 <div class="card-content">
                     <span class="card-label">Эксклюзив</span>
@@ -267,7 +282,7 @@
         </div>
     </main>
 
-    <!-- Твой кастомный футер -->
+    <!-- Футер -->
     <footer class="bg-emerald-950 text-white py-24">
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-16">
             <div class="col-span-1 md:col-span-2">
@@ -298,13 +313,6 @@
                 <a href="tel:88005008552" class="text-2xl font-bold text-white block">8 800 500 85 52</a>
                 <p class="mt-12 text-[10px] uppercase tracking-[0.3em] text-emerald-700">© 2026 Artix Atelier Branding</p>
             </div>
-        </div>
-    </footer>
-
-    <!-- Основной футер из style.css -->
-    <footer class="footer">
-        <div class="footer-content">
-            <!-- сюда можно добавить свой HTML-контент, если хочешь поменять текст -->
         </div>
     </footer>
 
